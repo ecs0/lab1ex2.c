@@ -27,7 +27,7 @@ int getUserInfo2(char name[]) {
     scanf("%s %s", lname,fname);
     sprintf(fullName, "%s %s", fname, lname);
     length = ((sizeof(char) *strlen(fullName))+1);
-    memcpy(name,fullName, length);
+    memcpy(name, fullName, length);
     sprintf(msg, "What's your lucky number?");
     puts(msg);
     scanf("%d", &luck);
